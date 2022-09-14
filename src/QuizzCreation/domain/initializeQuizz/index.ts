@@ -1,4 +1,14 @@
-import { Question } from "../computeScore";
+export type PossibleAnswers = {
+  isValid: boolean;
+  message: string;
+  answerId: string;
+}[];
+
+export type Question = {
+  id: string;
+  possibleAnswers: PossibleAnswers;
+  questionMessage: string;
+};
 
 export type Quizz = {
   name?: string;

@@ -1,4 +1,4 @@
-import { PossibleAnswers, Question } from "../../domain/computeScore";
+import { PossibleAnswers, Question } from "../../../QuizzScoring/domain/computeScore";
 
 const generateRandomNumber = ({ max, min }: { max: number; min: number }) =>
   Math.floor(Math.random() * (max - min + 1) + min);

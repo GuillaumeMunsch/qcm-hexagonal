@@ -1,12 +1,6 @@
 /* DOMAIN */
 
-import { Quizz } from "../initializeQuizz";
-
-export type PossibleAnswers = {
-  isValid: boolean;
-  message: string;
-  answerId: string;
-}[];
+import { PossibleAnswers, Quizz } from "../../../QuizzCreation/domain/initializeQuizz";
 
 export type QuestionAnswer = {
   questionId: string;
@@ -15,12 +9,6 @@ export type QuestionAnswer = {
 
 export type QuizzAnswer = {
   questionAnswers: QuestionAnswer[];
-};
-
-export type Question = {
-  id: string;
-  possibleAnswers: PossibleAnswers;
-  questionMessage: string;
 };
 
 export type GoToNextQuestion = () => void;

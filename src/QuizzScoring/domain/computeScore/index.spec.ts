@@ -1,7 +1,7 @@
 // @ts-ignore see https://github.com/jest-community/jest-extended#setup
 import * as matchers from "jest-extended";
-import { areAnswersCorrect, computeScore, PossibleAnswers, QuestionAnswer, QuizzAnswer } from ".";
-import { Quizz } from "../initializeQuizz";
+import { areAnswersCorrect, computeScore, QuestionAnswer, QuizzAnswer } from ".";
+import { PossibleAnswers, Quizz } from "../../../QuizzCreation/domain/initializeQuizz";
 
 expect.extend(matchers);
 
